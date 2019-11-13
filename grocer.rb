@@ -48,7 +48,7 @@ def apply_coupons(cart, coupons)
     #checks if cart_item is in our cart AND if the cart items count is greater than or equal to the number of that item on our coupon. if those two things are true:
     if cart_item_with_coupon[:count]
       cart_item_with_coupon[:count] += coupons[i][:num]
-      cart_item[:count] -= 
+      cart_item[:count] -= coupons[i][:num]
     end 
   end 
   i += 1 
