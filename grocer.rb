@@ -1,6 +1,18 @@
+require 'pry'
+
 def find_item_by_name_in_collection(name, collection)
   # Implement me first!
-  #
+    i = 0 
+    while i < collection.length do 
+      #binding.pry
+      if collection[i] = name
+        collection[i]
+      else 
+        return nil 
+      end 
+      i += 1 
+    end 
+  
   # Consult README for inputs and outputs
 end
 
