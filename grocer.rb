@@ -28,6 +28,7 @@ def consolidate_cart(cart)
         clearance: cart[i][:clearance],
         count: 1 
       }
+      new_cart << new_cart_item
     end 
     i += 1 
   end 
