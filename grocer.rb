@@ -7,11 +7,14 @@ def find_item_by_name_in_collection(name, collection)
       #binding.pry
       collection[i]
       if collection[i][:item] == name 
-        
-      i += 1 
-      end 
-       
+        collection[i]
+      else
+      return nil
     end 
+   i += 1 
+  end 
+       
+end 
   
   # Consult README for inputs and outputs
 end
