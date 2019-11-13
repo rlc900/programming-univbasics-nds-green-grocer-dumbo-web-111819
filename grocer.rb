@@ -54,7 +54,7 @@ def apply_coupons(cart, coupons)
         item: item_name_couponed,
         price: coupons[i][:cost] / coupons[i][:num],
         count: coupons[i][:num],
-        
+        clearance: 
       }
     end 
   end 
