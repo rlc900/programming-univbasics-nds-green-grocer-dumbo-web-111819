@@ -5,8 +5,8 @@ def find_item_by_name_in_collection(name, collection)
     i = 0 
     while i < collection.length do 
       #binding.pry
-      if collection[i] = name
-        collection[i]
+      if collection[i].include?(name)
+        return collection[i]
       else 
         return nil 
       end 
